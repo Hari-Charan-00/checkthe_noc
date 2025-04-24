@@ -5,8 +5,8 @@ import urllib3
 #urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BASE_URL = ""
-OPS_RAMP_SECRET = ''  # Add your OPS RAMP secret here
-OPS_RAMP_KEY = ''     # Add your OPS RAMP key here
+SECRET = ''  # Add your secret here
+KEY = ''     # Add your key here
 
 Partner_IDS = [
     ""
@@ -25,9 +25,9 @@ def token_generation():
     try:
         token_url = BASE_URL + "auth/oauth/token"
         auth_data = {
-            'client_secret': OPS_RAMP_SECRET,
+            'client_secret': SECRET,
             'grant_type': 'client_credentials',
-            'client_id': OPS_RAMP_KEY
+            'client_id': KEY
         }
         headers = {'Content-Type': 'application/x-www-form-urlencoded'}
         token_response = requests.post(token_url, data=auth_data, headers=headers, verify=True)
