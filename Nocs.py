@@ -68,8 +68,8 @@ def fetch_clients(access_token, partner_id):
                 total_pages = clients_data.get('totalPages', 1)
                 if page >= total_pages:
                     break
-                
                 page += 1
+                
             else:
                 print("Bad API response, unable to get client IDs")
                 break
