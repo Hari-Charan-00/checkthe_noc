@@ -8,9 +8,7 @@ BASE_URL = ""
 SECRET = ''  # Add your secret here
 KEY = ''     # Add your key here
 
-Partner_IDS = [
-    ""
-]
+Partner_IDS = [""]
 
 Partner_Names = {
     "": "ABC1"
