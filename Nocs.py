@@ -4,16 +4,16 @@ import urllib3
 
 #urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-BASE_URL = "https://netenrich.app.opsramp.com/"
-OPS_RAMP_SECRET = 'c55PPRzMPg3BWp5tXZMwwT8Gzpq6GmUbBwWnAfdhJZjmVHfXB59ZMM5rZY3kA5wf'  # Add your OPS RAMP secret here
-OPS_RAMP_KEY = 'cHrCgP3TWVtv3EwMzah3hfjH34eXUHM8'     # Add your OPS RAMP key here
+BASE_URL = ""
+OPS_RAMP_SECRET = ''  # Add your OPS RAMP secret here
+OPS_RAMP_KEY = ''     # Add your OPS RAMP key here
 
 Partner_IDS = [
-    "9384a74d-5370-573a-0608-9a14a25b234e"
+    ""
 ]
 
 Partner_Names = {
-    "9384a74d-5370-573a-0608-9a14a25b234e": "All Covered"
+    "": "ABC1"
 }
 
 Client_IDS = []
